@@ -6,13 +6,11 @@
 * [_Application_](http://www.fxp.co.il/member.php?u=782565) - Include developer
 
 ## Callback ##
-
-/*
-public OnPlayerFakeMoney(playerid, oldmoney, newmoney)
-{
-	new string[128];
- 	format(string, sizeof(string), "the player [ID: %d]%s faked money [%d] times.",playerid, pName[playerid], GetPlayerWarnings(playerid));
-  	SendClientMessageToAdmin(0xFF0000FF, string);
-	return 1;
-}
-*/
+	
+	public OnPlayerFakeMoney(playerid, oldmoney, newmoney)
+	{
+		new string[128];
+		format(string, sizeof(string), "the player [ID: %d]%s faked money [%d] times.",playerid, pName[playerid], GetPlayerWarnings(playerid));
+		SendClientMessageToAdmin(0xFF0000FF, string);
+		return 1;
+	}
