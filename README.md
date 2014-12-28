@@ -18,3 +18,9 @@
 		SendClientMessageToAdmin(0xFF0000FF, string);
 		return 1;
 	}
+
+## Function ##
+GetPlayerWarnings(playerid) - קבלת מספר האזהרות כנ"ל
+
+## Changelog ##
+[28-12-2014 | v1.0] - נכון לעכשיו גרסת הבטא!
