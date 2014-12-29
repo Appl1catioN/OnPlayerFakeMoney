@@ -22,6 +22,9 @@
 	forward %1(%2); \
 		public %1(%2)
 
+#define GetPlayerWarnings(%0) \
+	fakemoneyWarnings[%0]
+
 #define MAX_WARNINGS    (3)
 
 forward OnPlayerFakeMoney(playerid, oldmoney, newmoney);
@@ -121,8 +124,3 @@ stock _ACM_GetPlayerMoney(playerid) return GetPVarInt(playerid, "acm_cash");
 #endif
 
 #define GetPlayerMoney _ACM_GetPlayerMoney
-
-stock GetPlayerWarnings(playerid)
-{
-	return fakemoneyWarnings[playerid];
-}
